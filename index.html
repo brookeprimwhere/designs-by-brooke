@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="Designs by Brooke is a fashion design portfolio focused on texture, materials, styling concepts, sketches, and creative direction."
+    content="Designs by Brooke is a fashion design portfolio focused on texture, materials, soft neutrals, styling concepts, sketches, and creative direction."
   />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +19,8 @@
   >
 
   <link rel="stylesheet" href="style.css" />
+
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
@@ -35,11 +37,11 @@
 
     <section class="hero-inner">
       <div class="hero-copy">
-        <p class="eyebrow">Fashion Design Portfolio</p>
+        <p class="eyebrow" id="hero-kicker">Fashion Design Portfolio</p>
 
-        <h1>Designs by Brooke</h1>
+        <h1 id="brand-title">Designs by Brooke</h1>
 
-        <p class="hero-text">
+        <p class="hero-text" id="hero-text">
           A fashion design portfolio focused on texture, material exploration,
           soft neutrals, styling concepts, and creative direction.
         </p>
@@ -75,9 +77,9 @@
       <p class="section-label">About</p>
 
       <div class="split-layout">
-        <h2>Fashion design shaped by texture, materials, and mood.</h2>
+        <h2 id="about-heading">Fashion design shaped by texture, materials, and mood.</h2>
 
-        <p>
+        <p id="about-text">
           Designs by Brooke is an emerging fashion portfolio exploring the relationship
           between fabric, silhouette, color, and personal style. The work focuses on
           material choices, texture combinations, soft neutral palettes, styling ideas,
@@ -91,70 +93,44 @@
         <p class="section-label">Portfolio</p>
         <h2>Selected Work</h2>
 
-        <p>
+        <p id="portfolio-intro">
           This portfolio will showcase material studies, texture boards, fashion sketches,
           styling concepts, garment details, and finished creative projects.
         </p>
       </div>
 
-      <div class="portfolio-grid">
-        <article class="portfolio-card">
-          <div class="image-placeholder texture-card">
-            <span>Texture Studies</span>
-          </div>
-
-          <h3>Texture Studies</h3>
-
-          <p>
-            Explorations of fabric surfaces, layering, movement, softness, structure,
-            and tactile detail.
-          </p>
-        </article>
-
-        <article class="portfolio-card featured-card">
-          <div class="image-placeholder material-card-preview">
-            <span>Materials</span>
-          </div>
-
-          <h3>Material Boards</h3>
-
-          <p>
-            Fabric inspiration, material pairings, neutral palettes, trims, finishes,
-            and design references.
-          </p>
-        </article>
-
-        <article class="portfolio-card">
-          <div class="image-placeholder styling-card">
-            <span>Styling</span>
-          </div>
-
-          <h3>Styling Concepts</h3>
-
-          <p>
-            Outfit direction, silhouette ideas, color stories, layering concepts,
-            and visual inspiration.
-          </p>
-        </article>
-      </div>
+      <div class="portfolio-grid" id="portfolio-grid"></div>
     </section>
 
     <section id="contact" class="section contact-section">
       <p class="section-label">Contact</p>
 
-      <h2>Interested in Designs by Brooke?</h2>
+      <h2 id="contact-heading">Interested in Designs by Brooke?</h2>
 
-      <p>
-        For portfolio inquiries, collaborations, or questions, use the contact
-        information below.
+      <p id="contact-text">
+        For portfolio inquiries, collaborations, or questions, use the contact information below.
       </p>
 
-      <a class="email-link" href="mailto:add-email-here">add-email-here</a>
+      <a class="email-link" id="email-link" href="#contact">Contact email coming soon</a>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Designs by Brooke. All rights reserved.</p>
+    <p id="footer-text">&copy; 2026 Designs by Brooke. All rights reserved.</p>
   </footer>
+
+  <script src="site.js"></script>
+
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", function(user) {
+        if (!user) {
+          window.netlifyIdentity.on("login", function() {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 </body>
 </html>
