@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f1f1f;
+  background: #faf7f2;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f4e7dc, #fffaf4);
+  padding: 24px;
+}
+
+.nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 140px auto 0;
+  text-align: center;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+  color: #8a5a44;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  margin: 16px 0;
+}
+
+.hero-text {
+  max-width: 700px;
+  margin: 0 auto 32px;
+  font-size: 20px;
+  color: #555;
+}
+
+.button {
+  display: inline-block;
+  background: #1f1f1f;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background: #444;
+}
+
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.section p {
+  font-size: 18px;
+  color: #555;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 32px;
+}
+
+.portfolio-card {
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.placeholder {
+  height: 260px;
+  border-radius: 14px;
+  background: #eadfd2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8a5a44;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.portfolio-card h3 {
+  font-size: 22px;
+  margin: 0 0 8px;
+}
+
+.portfolio-card p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.contact-section {
+  text-align: center;
+}
+
+.contact-email {
+  font-weight: bold;
+  color: #1f1f1f !important;
+}
+
+footer {
+  text-align: center;
+  padding: 32px 24px;
+  background: #1f1f1f;
+  color: white;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .nav {
+    align-items: flex-start;
+    gap: 16px;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .hero-content {
+    margin-top: 100px;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .hero-text {
+    font-size: 18px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
