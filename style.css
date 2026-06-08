@@ -9,8 +9,8 @@ html {
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: #1f1f1f;
-  background: #faf7f2;
+  color: #f8f4ff;
+  background: #12071f;
   line-height: 1.6;
 }
 
@@ -21,21 +21,29 @@ a {
 
 .hero {
   min-height: 100vh;
-  background: linear-gradient(135deg, #f4e7dc, #fffaf4);
   padding: 24px;
+  background:
+    radial-gradient(circle at top left, rgba(168, 85, 247, 0.45), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(236, 72, 153, 0.35), transparent 35%),
+    linear-gradient(135deg, #160826 0%, #2b0b45 45%, #4c1d95 100%);
 }
 
 .nav {
   max-width: 1100px;
   margin: 0 auto;
+  padding: 18px 22px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
 }
 
 .logo {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 800;
   letter-spacing: 0.5px;
 }
 
@@ -45,100 +53,120 @@ a {
   font-size: 15px;
 }
 
+.nav-links a {
+  color: #e9d5ff;
+}
+
 .nav-links a:hover {
-  text-decoration: underline;
+  color: #ffffff;
 }
 
 .hero-content {
-  max-width: 900px;
-  margin: 140px auto 0;
+  max-width: 950px;
+  margin: 135px auto 0;
   text-align: center;
 }
 
 .eyebrow {
+  display: inline-block;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
   font-size: 13px;
-  color: #8a5a44;
-  font-weight: bold;
+  color: #f0abfc;
+  font-weight: 800;
+  margin-bottom: 10px;
 }
 
 h1 {
-  font-size: 56px;
-  line-height: 1.1;
-  margin: 16px 0;
+  font-size: 64px;
+  line-height: 1.05;
+  margin: 12px 0 22px;
+  letter-spacing: -2px;
 }
 
 .hero-text {
-  max-width: 700px;
-  margin: 0 auto 32px;
+  max-width: 720px;
+  margin: 0 auto 34px;
   font-size: 20px;
-  color: #555;
+  color: #ddd6fe;
 }
 
 .button {
   display: inline-block;
-  background: #1f1f1f;
+  background: linear-gradient(135deg, #a855f7, #ec4899);
   color: white;
-  padding: 14px 24px;
+  padding: 15px 26px;
   border-radius: 999px;
-  font-weight: bold;
+  font-weight: 800;
+  box-shadow: 0 18px 40px rgba(168, 85, 247, 0.35);
 }
 
 .button:hover {
-  background: #444;
+  transform: translateY(-2px);
+}
+
+main {
+  background:
+    radial-gradient(circle at top right, rgba(168, 85, 247, 0.18), transparent 30%),
+    #12071f;
 }
 
 .section {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 80px 24px;
+  padding: 90px 24px;
 }
 
 .section h2 {
-  font-size: 36px;
-  margin-bottom: 16px;
+  font-size: 42px;
+  margin: 0 0 16px;
+  letter-spacing: -1px;
 }
 
 .section p {
   font-size: 18px;
-  color: #555;
+  color: #c4b5fd;
 }
 
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
-  margin-top: 32px;
+  margin-top: 36px;
 }
 
 .portfolio-card {
-  background: white;
-  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 24px;
   padding: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(14px);
 }
 
 .placeholder {
-  height: 260px;
-  border-radius: 14px;
-  background: #eadfd2;
+  height: 280px;
+  border-radius: 18px;
+  background:
+    linear-gradient(135deg, rgba(168, 85, 247, 0.85), rgba(236, 72, 153, 0.75)),
+    #a855f7;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #8a5a44;
-  font-weight: bold;
+  color: white;
+  font-weight: 800;
   margin-bottom: 18px;
 }
 
 .portfolio-card h3 {
-  font-size: 22px;
+  font-size: 23px;
   margin: 0 0 8px;
 }
 
 .portfolio-card p {
   font-size: 16px;
   margin: 0;
+  color: #ddd6fe;
 }
 
 .contact-section {
@@ -146,15 +174,15 @@ h1 {
 }
 
 .contact-email {
-  font-weight: bold;
-  color: #1f1f1f !important;
+  font-weight: 800;
+  color: #ffffff !important;
 }
 
 footer {
   text-align: center;
-  padding: 32px 24px;
-  background: #1f1f1f;
-  color: white;
+  padding: 34px 24px;
+  background: #0b0414;
+  color: #c4b5fd;
 }
 
 footer p {
@@ -166,6 +194,7 @@ footer p {
     align-items: flex-start;
     gap: 16px;
     flex-direction: column;
+    border-radius: 24px;
   }
 
   .nav-links {
@@ -174,12 +203,12 @@ footer p {
   }
 
   .hero-content {
-    margin-top: 100px;
+    margin-top: 90px;
     text-align: left;
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 43px;
   }
 
   .hero-text {
