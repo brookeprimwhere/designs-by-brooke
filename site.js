@@ -8,7 +8,7 @@ async function loadSiteContent() {
 
     const siteContent = await response.json();
 
-    updateText("brand-title", siteContent.brandName);
+    updateText("brand-title", siteContent.heroHeadline);
     updateText("hero-kicker", siteContent.heroKicker);
     updateText("hero-text", siteContent.heroText);
     updateText("about-heading", siteContent.aboutHeading);
@@ -19,7 +19,7 @@ async function loadSiteContent() {
 
     updateEmail(siteContent.contactEmail);
     renderPortfolio(siteContent.portfolioItems || []);
-    updateText("footer-text", `© 2026 ${siteContent.brandName}. All rights reserved.`);
+    updateText("footer-text", "© 2026 Designs by Brooke. All rights reserved.");
   } catch (error) {
     console.error(error);
   }
@@ -60,7 +60,7 @@ function renderPortfolio(items) {
 
   items.forEach((item) => {
     const article = document.createElement("article");
-    article.className = item.featured ? "portfolio-card featured-card" : "portfolio-card";
+    article.className = "portfolio-card";
 
     if (item.image) {
       const image = document.createElement("img");
