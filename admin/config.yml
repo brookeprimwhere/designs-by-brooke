@@ -14,8 +14,8 @@ collections:
         file: "content/site.json"
         format: "json"
         fields:
-          - label: "Brand Name"
-            name: "brandName"
+          - label: "Hero Headline"
+            name: "heroHeadline"
             widget: "string"
 
           - label: "Hero Kicker"
@@ -83,9 +83,3 @@ collections:
                     value: "material-card-preview"
                   - label: "Styling"
                     value: "styling-card"
-
-              - label: "Featured Card"
-                name: "featured"
-                widget: "boolean"
-                required: false
-                default: false
