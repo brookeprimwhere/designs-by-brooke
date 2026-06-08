@@ -1,0 +1,91 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "site"
+    label: "Website Content"
+    files:
+      - name: "homepage"
+        label: "Homepage"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - label: "Brand Name"
+            name: "brandName"
+            widget: "string"
+
+          - label: "Hero Kicker"
+            name: "heroKicker"
+            widget: "string"
+
+          - label: "Hero Text"
+            name: "heroText"
+            widget: "text"
+
+          - label: "About Heading"
+            name: "aboutHeading"
+            widget: "string"
+
+          - label: "About Text"
+            name: "aboutText"
+            widget: "text"
+
+          - label: "Portfolio Intro"
+            name: "portfolioIntro"
+            widget: "text"
+
+          - label: "Contact Heading"
+            name: "contactHeading"
+            widget: "string"
+
+          - label: "Contact Text"
+            name: "contactText"
+            widget: "text"
+
+          - label: "Contact Email"
+            name: "contactEmail"
+            widget: "string"
+            required: false
+
+          - label: "Portfolio Items"
+            name: "portfolioItems"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+
+              - label: "Card Label"
+                name: "label"
+                widget: "string"
+
+              - label: "Description"
+                name: "description"
+                widget: "text"
+
+              - label: "Image"
+                name: "image"
+                widget: "image"
+                required: false
+
+              - label: "Fallback Texture Style"
+                name: "styleClass"
+                widget: "select"
+                options:
+                  - label: "Texture"
+                    value: "texture-card"
+                  - label: "Materials"
+                    value: "material-card-preview"
+                  - label: "Styling"
+                    value: "styling-card"
+
+              - label: "Featured Card"
+                name: "featured"
+                widget: "boolean"
+                required: false
+                default: false
