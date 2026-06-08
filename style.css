@@ -12,7 +12,6 @@
   --white: #ffffff;
   --text-soft: #ddd6fe;
   --text-muted: #bfa9ee;
-  --glass: rgba(255, 255, 255, 0.08);
   --glass-border: rgba(255, 255, 255, 0.16);
 }
 
@@ -38,10 +37,10 @@ a {
   padding: 28px;
   overflow: hidden;
   background:
-    radial-gradient(circle at 15% 10%, rgba(236, 72, 153, 0.32), transparent 32%),
-    radial-gradient(circle at 85% 20%, rgba(139, 92, 246, 0.4), transparent 30%),
-    radial-gradient(circle at 60% 90%, rgba(168, 85, 247, 0.3), transparent 35%),
-    linear-gradient(135deg, #10051f 0%, #250948 45%, #4c1d95 100%);
+    radial-gradient(circle at 15% 10%, rgba(236, 72, 153, 0.24), transparent 32%),
+    radial-gradient(circle at 85% 20%, rgba(139, 92, 246, 0.34), transparent 30%),
+    radial-gradient(circle at 60% 90%, rgba(168, 85, 247, 0.24), transparent 35%),
+    linear-gradient(135deg, #10051f 0%, #250948 48%, #3b1474 100%);
 }
 
 .nav {
@@ -59,9 +58,17 @@ a {
 }
 
 .brand {
+  width: 46px;
+  height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--violet), var(--pink));
+  color: var(--white);
   font-weight: 800;
-  letter-spacing: -0.03em;
-  font-size: 18px;
+  letter-spacing: -0.04em;
+  font-size: 15px;
 }
 
 .nav-links {
@@ -113,24 +120,18 @@ h1 {
   letter-spacing: -0.07em;
 }
 
-.intro-line {
+.brand-headline {
   display: block;
-  font-size: clamp(42px, 6vw, 78px);
-  font-weight: 800;
-}
-
-.name-highlight {
-  display: block;
-  margin-top: 8px;
+  max-width: 820px;
   font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(66px, 10vw, 138px);
+  font-size: clamp(72px, 11vw, 148px);
   line-height: 0.88;
   letter-spacing: -0.08em;
-  background: linear-gradient(120deg, #ffffff 5%, #f5d0fe 30%, #c084fc 60%, #ec4899 95%);
+  background: linear-gradient(120deg, #ffffff 5%, #f5d0fe 35%, #c084fc 68%, #ec4899 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  text-shadow: 0 30px 80px rgba(236, 72, 153, 0.28);
+  text-shadow: 0 30px 80px rgba(236, 72, 153, 0.24);
 }
 
 .hero-text {
@@ -156,6 +157,7 @@ h1 {
   border-radius: 999px;
   font-size: 15px;
   font-weight: 800;
+  transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .primary-button {
@@ -197,7 +199,7 @@ h1 {
   flex-direction: column;
   justify-content: flex-end;
   background:
-    linear-gradient(160deg, rgba(236, 72, 153, 0.24), rgba(139, 92, 246, 0.16)),
+    linear-gradient(160deg, rgba(236, 72, 153, 0.18), rgba(139, 92, 246, 0.14)),
     rgba(255, 255, 255, 0.08);
 }
 
@@ -207,9 +209,9 @@ h1 {
   inset: 24px;
   border-radius: 32px;
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.18), transparent),
-    radial-gradient(circle at 30% 20%, rgba(245, 208, 254, 0.4), transparent 28%),
-    radial-gradient(circle at 70% 70%, rgba(236, 72, 153, 0.38), transparent 30%);
+    linear-gradient(135deg, rgba(255, 255, 255, 0.14), transparent),
+    radial-gradient(circle at 30% 20%, rgba(245, 208, 254, 0.28), transparent 28%),
+    radial-gradient(circle at 70% 70%, rgba(236, 72, 153, 0.28), transparent 30%);
   z-index: -1;
 }
 
@@ -267,8 +269,8 @@ h1 {
 
 main {
   background:
-    radial-gradient(circle at top left, rgba(236, 72, 153, 0.12), transparent 28%),
-    radial-gradient(circle at bottom right, rgba(139, 92, 246, 0.14), transparent 30%),
+    radial-gradient(circle at top left, rgba(236, 72, 153, 0.1), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(139, 92, 246, 0.12), transparent 30%),
     var(--bg-dark);
 }
 
@@ -330,10 +332,10 @@ main {
   padding: 22px;
   overflow: hidden;
   background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.18), transparent 40%),
-    radial-gradient(circle at 25% 25%, rgba(245, 208, 254, 0.5), transparent 26%),
-    radial-gradient(circle at 80% 70%, rgba(236, 72, 153, 0.5), transparent 30%),
-    linear-gradient(135deg, #4c1d95, #a855f7 48%, #ec4899);
+    linear-gradient(145deg, rgba(255, 255, 255, 0.16), transparent 40%),
+    radial-gradient(circle at 25% 25%, rgba(245, 208, 254, 0.38), transparent 26%),
+    radial-gradient(circle at 80% 70%, rgba(236, 72, 153, 0.38), transparent 30%),
+    linear-gradient(135deg, #4c1d95, #8b5cf6 52%, #ec4899);
 }
 
 .image-placeholder span {
@@ -447,5 +449,9 @@ footer p {
 
   .section {
     padding: 78px 22px;
+  }
+
+  .brand-headline {
+    font-size: clamp(64px, 18vw, 104px);
   }
 }
