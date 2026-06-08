@@ -1,0 +1,37 @@
+{
+  "brandName": "Designs by Brooke",
+  "heroKicker": "Fashion Design Portfolio",
+  "heroText": "A fashion design portfolio focused on texture, material exploration, soft neutrals, styling concepts, and creative direction.",
+  "aboutHeading": "Fashion design shaped by texture, materials, and mood.",
+  "aboutText": "Designs by Brooke is an emerging fashion portfolio exploring the relationship between fabric, silhouette, color, and personal style. The work focuses on material choices, texture combinations, soft neutral palettes, styling ideas, and visual storytelling.",
+  "portfolioIntro": "This portfolio will showcase material studies, texture boards, fashion sketches, styling concepts, garment details, and finished creative projects.",
+  "contactHeading": "Interested in Designs by Brooke?",
+  "contactText": "For portfolio inquiries, collaborations, or questions, use the contact information below.",
+  "contactEmail": "add-email-here",
+  "portfolioItems": [
+    {
+      "title": "Texture Studies",
+      "label": "Texture Studies",
+      "description": "Explorations of fabric surfaces, layering, movement, softness, structure, and tactile detail.",
+      "image": "",
+      "styleClass": "texture-card",
+      "featured": false
+    },
+    {
+      "title": "Material Boards",
+      "label": "Materials",
+      "description": "Fabric inspiration, material pairings, neutral palettes, trims, finishes, and design references.",
+      "image": "",
+      "styleClass": "material-card-preview",
+      "featured": true
+    },
+    {
+      "title": "Styling Concepts",
+      "label": "Styling",
+      "description": "Outfit direction, silhouette ideas, color stories, layering concepts, and visual inspiration.",
+      "image": "",
+      "styleClass": "styling-card",
+      "featured": false
+    }
+  ]
+}
