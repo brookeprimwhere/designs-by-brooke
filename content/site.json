@@ -1,32 +1,60 @@
 {
-  "heroHeadline": "Texture, materials, and soft neutral design.",
+  "heroHeadline": "Chiffon, lace, silk.",
   "heroKicker": "Fashion Design Portfolio",
-  "heroText": "A fashion portfolio exploring fabric, silhouette, texture, layering, neutral palettes, and material-focused design concepts.",
+  "heroText": "A soft neutral fashion portfolio exploring texture, movement, layering, and material-focused design.",
   "aboutHeading": "Fashion design shaped by texture, materials, and mood.",
-  "aboutText": "Designs by Brooke is an emerging fashion portfolio exploring the relationship between fabric, silhouette, color, and personal style. The work focuses on material choices, texture combinations, soft neutral palettes, styling ideas, and visual storytelling.",
+  "aboutText": "Designs by Brooke is an emerging fashion portfolio exploring the relationship between fabric, silhouette, color, and personal style. The work focuses on chiffon, lace, silk, soft neutral palettes, styling ideas, and visual storytelling.",
   "portfolioIntro": "This portfolio will showcase material studies, texture boards, fashion sketches, styling concepts, garment details, and finished creative projects.",
+  "journalHeading": "Design Journal",
+  "journalIntro": "Notes on materials, inspiration, process, styling ideas, and design direction.",
   "contactHeading": "Interested in Designs by Brooke?",
   "contactText": "For portfolio inquiries, collaborations, or questions, use the contact information below.",
   "contactEmail": "brookeprimwhere@icloud.com",
   "portfolioItems": [
     {
-      "title": "Texture Studies",
-      "label": "Texture Studies",
-      "description": "Explorations of fabric surfaces, layering, movement, softness, structure, and tactile detail.",
+      "title": "Chiffon Studies",
+      "label": "Chiffon",
+      "description": "Soft, sheer material studies focused on movement, layering, drape, and lightness.",
       "image": "",
-      "styleClass": "texture-card"
+      "styleClass": "chiffon-card"
     },
     {
-      "title": "Material Boards",
+      "title": "Lace Details",
+      "label": "Lace",
+      "description": "Texture-focused explorations of lace, pattern, detail, contrast, and delicate structure.",
+      "image": "",
+      "styleClass": "lace-card"
+    },
+    {
+      "title": "Silk Concepts",
+      "label": "Silk",
+      "description": "Smooth material inspiration focused on flow, softness, elevated styling, and garment finish.",
+      "image": "",
+      "styleClass": "silk-card"
+    }
+  ],
+  "journalPosts": [
+    {
+      "title": "Why Chiffon, Lace, and Silk",
       "label": "Materials",
-      "description": "Fabric inspiration, material pairings, neutral palettes, trims, finishes, and design references.",
+      "date": "Material Notes",
+      "excerpt": "A short note on the materials that shape the direction of Designs by Brooke.",
       "image": "",
       "styleClass": "material-card-preview"
     },
     {
-      "title": "Styling Concepts",
-      "label": "Styling",
-      "description": "Outfit direction, silhouette ideas, color stories, layering concepts, and visual inspiration.",
+      "title": "Soft Neutrals as a Design Base",
+      "label": "Palette",
+      "date": "Color Story",
+      "excerpt": "How light grey, pearl beige, stone, taupe, and driftwood create a softer design language.",
+      "image": "",
+      "styleClass": "texture-card"
+    },
+    {
+      "title": "Building a Fashion Portfolio",
+      "label": "Process",
+      "date": "Design Process",
+      "excerpt": "A look at sketches, mood boards, material studies, and styling concepts as the portfolio grows.",
       "image": "",
       "styleClass": "styling-card"
     }
