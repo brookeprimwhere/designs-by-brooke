@@ -36,25 +36,31 @@
   "journalPosts": [
     {
       "title": "Why Chiffon, Lace, and Silk",
+      "slug": "why-chiffon-lace-and-silk",
       "label": "Materials",
       "date": "Material Notes",
       "excerpt": "A short note on the materials that shape the direction of Designs by Brooke.",
+      "body": "The foundation of Designs by Brooke begins with three materials: chiffon, lace, and silk.\n\nChiffon brings movement and softness. Lace adds texture, pattern, and delicate detail. Silk creates a smooth, elevated finish.\n\nTogether, these materials shape the portfolio’s soft neutral direction and help define the visual language of the brand.",
       "image": "",
       "styleClass": "material-card-preview"
     },
     {
       "title": "Soft Neutrals as a Design Base",
+      "slug": "soft-neutrals-as-a-design-base",
       "label": "Palette",
       "date": "Color Story",
       "excerpt": "How light grey, pearl beige, stone, taupe, and driftwood create a softer design language.",
+      "body": "Soft neutrals create a calm foundation for the Designs by Brooke portfolio.\n\nLight grey, pearl beige, stone, taupe, and driftwood allow texture and material choices to stand out without overwhelming the design.\n\nThis palette supports a softer visual language while still feeling modern, intentional, and polished.",
       "image": "",
       "styleClass": "texture-card"
     },
     {
       "title": "Building a Fashion Portfolio",
+      "slug": "building-a-fashion-portfolio",
       "label": "Process",
       "date": "Design Process",
       "excerpt": "A look at sketches, mood boards, material studies, and styling concepts as the portfolio grows.",
+      "body": "A fashion portfolio grows through process, not just finished work.\n\nSketches, mood boards, material studies, garment details, and styling concepts all show how an idea develops over time.\n\nDesigns by Brooke will continue to build around texture, soft neutrals, and material-led creative direction.",
       "image": "",
       "styleClass": "styling-card"
     }
