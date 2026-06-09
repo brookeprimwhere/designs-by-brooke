@@ -80,6 +80,7 @@ collections:
                 name: "image"
                 widget: "image"
                 required: false
+                hint: "Upload an image for this portfolio card. If left blank, the fallback texture style will be used."
 
               - label: "Fallback Texture Style"
                 name: "styleClass"
@@ -107,6 +108,11 @@ collections:
                 name: "title"
                 widget: "string"
 
+              - label: "URL Slug"
+                name: "slug"
+                widget: "string"
+                hint: "Use lowercase words with hyphens, like why-chiffon-lace-and-silk"
+
               - label: "Card Label"
                 name: "label"
                 widget: "string"
@@ -120,10 +126,16 @@ collections:
                 name: "excerpt"
                 widget: "text"
 
+              - label: "Full Entry"
+                name: "body"
+                widget: "markdown"
+                hint: "This is the full journal entry that opens when someone clicks the card."
+
               - label: "Image"
                 name: "image"
                 widget: "image"
                 required: false
+                hint: "Upload an image for this journal card and entry page. If left blank, the fallback texture style will be used."
 
               - label: "Fallback Texture Style"
                 name: "styleClass"
