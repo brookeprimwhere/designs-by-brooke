@@ -38,6 +38,14 @@ collections:
             name: "portfolioIntro"
             widget: "text"
 
+          - label: "Journal Heading"
+            name: "journalHeading"
+            widget: "string"
+
+          - label: "Journal Intro"
+            name: "journalIntro"
+            widget: "text"
+
           - label: "Contact Heading"
             name: "contactHeading"
             widget: "string"
@@ -83,3 +91,53 @@ collections:
                     value: "material-card-preview"
                   - label: "Styling"
                     value: "styling-card"
+                  - label: "Chiffon"
+                    value: "chiffon-card"
+                  - label: "Lace"
+                    value: "lace-card"
+                  - label: "Silk"
+                    value: "silk-card"
+
+          - label: "Journal Posts"
+            name: "journalPosts"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+
+              - label: "Card Label"
+                name: "label"
+                widget: "string"
+
+              - label: "Date or Category"
+                name: "date"
+                widget: "string"
+                required: false
+
+              - label: "Excerpt"
+                name: "excerpt"
+                widget: "text"
+
+              - label: "Image"
+                name: "image"
+                widget: "image"
+                required: false
+
+              - label: "Fallback Texture Style"
+                name: "styleClass"
+                widget: "select"
+                options:
+                  - label: "Texture"
+                    value: "texture-card"
+                  - label: "Materials"
+                    value: "material-card-preview"
+                  - label: "Styling"
+                    value: "styling-card"
+                  - label: "Chiffon"
+                    value: "chiffon-card"
+                  - label: "Lace"
+                    value: "lace-card"
+                  - label: "Silk"
+                    value: "silk-card"
