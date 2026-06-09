@@ -53,6 +53,13 @@ img {
     linear-gradient(135deg, var(--soft-white) 0%, var(--silver-grey) 58%, var(--pearl-beige) 100%);
 }
 
+.page-header {
+  padding: 28px;
+  background:
+    radial-gradient(circle at 12% 10%, rgba(217, 221, 217, 0.85), transparent 34%),
+    linear-gradient(135deg, var(--soft-white) 0%, var(--silver-grey) 100%);
+}
+
 .nav {
   max-width: 1180px;
   margin: 0 auto;
@@ -269,6 +276,17 @@ main {
   box-shadow: 0 20px 56px var(--shadow);
 }
 
+.journal-card {
+  display: block;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.journal-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 26px 70px var(--shadow);
+}
+
 .image-placeholder {
   height: 300px;
   margin-bottom: 22px;
@@ -385,7 +403,8 @@ main {
   max-width: 800px;
 }
 
-.email-link {
+.email-link,
+.back-link {
   display: inline-flex;
   margin-top: 12px;
   padding: 14px 22px;
@@ -393,6 +412,61 @@ main {
   background: var(--text-dark);
   color: var(--warm-white);
   font-weight: 800;
+}
+
+.journal-detail {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 92px 28px 110px;
+}
+
+.journal-detail h1 {
+  max-width: 820px;
+  font-size: clamp(46px, 7vw, 88px);
+}
+
+.journal-detail-meta {
+  color: var(--grey-taupe);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.journal-detail-image img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  display: block;
+  border-radius: 30px;
+  border: 1px solid var(--border);
+  margin-bottom: 34px;
+  box-shadow: 0 20px 56px var(--shadow);
+}
+
+.journal-detail-body {
+  color: var(--text-muted);
+  font-size: 19px;
+}
+
+.journal-detail-body p {
+  margin-bottom: 20px;
+}
+
+.journal-detail-body h2,
+.journal-detail-body h3 {
+  margin-top: 34px;
+  margin-bottom: 12px;
+  font-family: "Playfair Display", Georgia, serif;
+  color: var(--text-dark);
+  letter-spacing: -0.04em;
+}
+
+.journal-detail-body ul,
+.journal-detail-body ol {
+  padding-left: 24px;
+  margin-bottom: 20px;
 }
 
 footer {
@@ -408,7 +482,8 @@ footer p {
 }
 
 @media (max-width: 900px) {
-  .hero {
+  .hero,
+  .page-header {
     padding: 20px;
   }
 
@@ -475,5 +550,9 @@ footer p {
 
   .section {
     padding: 76px 22px;
+  }
+
+  .journal-detail {
+    padding: 72px 22px 92px;
   }
 }
